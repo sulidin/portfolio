@@ -1,0 +1,292 @@
+html {
+	font-family: "montserrat", sans-serif ;
+    height: 100%;
+}
+
+body {
+	margin: 0;
+    background: #241e20;
+	font: 16px/30px "montserrat";
+	font-weight: normal;
+	color: #6d6d6d;
+}
+
+img,
+object {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*<<<<<<<<<<< navigation >>>>>>>>>>> */
+#nav-all,
+#nav-all ul,
+#nav-all li,
+#nav-all a {
+	margin: 0;
+	padding: 0;
+}
+
+#main-header{
+    padding-top: 20px;
+}
+
+#nav-all {
+	font: 15px "montserrat";
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: left; 
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+#nav-all > a {
+	display: none;
+}
+ul#nav {
+	min-height: 66px;
+	display: inline-block;
+	width: auto;  
+	text-align: left;
+}
+
+ul#nav li {
+	position: relative;
+	list-style: none;
+	display: inline-block;
+	height: 66px;    
+}
+
+
+ul#nav li a {
+	display: block;
+	padding: 14px 12px;
+    padding-left: 0px;
+	line-height: 38px;
+	text-decoration: none;
+	text-align: left;
+	color: #FFFFFF;
+	position: relative;
+}
+
+ul#nav li a:hover {
+    transition: all 0.3s ease-in-out;
+	color: #fdc501;
+}
+
+ul#nav li a:active {
+	background-color: transparent ;
+}
+
+ul#nav li.current a {
+	color: #fdc501;
+    
+}
+/*<<<<<<<<<<< navigation ENDS >>>>>>>>>>> */
+
+#mainImage {
+	width: 100%;
+	text-align: left;
+	position: relative;   
+}
+
+
+
+
+/*<<<<<<<<<<< content Section >>>>>>>>>>> */
+.content {
+	background: #241e20;
+	padding-top: 10px;
+	border-bottom: 1px solid #241e20;  
+}
+
+.content .row.items {
+	max-width: 1260px;
+	margin-top: 24px;
+}
+
+.content-wrapper {
+	margin-top: 36px; 
+}
+
+.content-wrapper .bgrid {
+	padding: 0;
+}
+
+.content hr {
+	border: solid #707273;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 23px 0 12px;
+	height: 0;
+    width: 150px;
+}
+.content h1 {
+    font: 20px "montserrat";
+    font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: left; 
+    background: transparent;
+    
+}
+
+
+.item .item-wrap {
+	background: #241e20;
+	overflow: hidden;
+	position: relative;
+    padding: 4px;
+
+}
+
+.item .item-wrap a {
+	display: grid;
+	cursor: pointer;
+	position: relative;
+}
+
+.item .item-wrap img {
+	vertical-align: bottom;
+}
+
+#about{
+    padding-left: 20px;
+}
+#about h3 {
+margin-top: 0px;
+}
+
+
+/* <<<Grid>>>*/
+
+.row {
+	width: 96%;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+/* 
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+} */
+
+
+
+.bgrid {
+	position: relative;
+	min-height: 30px;
+	float: left;
+}
+
+.bgrid-sixth .bgrid {
+	width: 16.66667%;
+}
+
+.bgrid-fourth .bgrid {
+	width: 25%;
+}
+
+.bgrid-third .bgrid {
+	width: 33.33333%;
+}
+
+.bgrid-half .bgrid {
+	width: 50%;
+}
+
+.bgrid {
+	padding: 0;
+}
+
+
+.bgrid-sixth .bgrid:nth-child(6n+1),
+.bgrid-fourth .bgrid:nth-child(4n+1),
+.bgrid-third .bgrid:nth-child(3n+1),
+.bgrid-half .bgrid:nth-child(2n+1) {
+	clear: both;
+}
+
+
+/* <<<<< resizable grids >>>>>>> */
+@media screen and (max-width:750px) {
+	.tab-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+
+	.tab-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+
+	.tab-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+
+	.tab-bgrid-half .bgrid {
+		width: 50%;
+	}
+
+	.tab-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="tab-bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.tab-bgrid-sixth .bgrid:nth-child(6n+1),
+	.tab-bgrid-fourth .bgrid:nth-child(4n+1),
+	.tab-bgrid-third .bgrid:nth-child(3n+1),
+	.tab-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+/*<<<<<<<<<<< Latest Content Section ENDS>>>>>>>>>>> */
+
+
+/*<<<<<<<<<<< Footer Section>>>>>>>>>>> */
+footer {
+	padding-top: 100px;
+	padding-bottom: 24px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.15);
+}
+
+
+footer a,
+footer a:visited {
+	color: #a3a4a6;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+	color: #fdc501;
+}
+
+
+footer .info {
+	width: 90%;
+	max-width: 600px;
+	margin: 60px auto 36px;
+	text-align: center;
+	clear: both;
+    padding-top: 40px;
+    
+}
+
+footer .copyright {
+	clear: both;
+	margin: 15px 0;
+	padding: 24px 18px 6px 18px;
+	font: 14px/24px "raleway-medium", sans-serif;
+	letter-spacing: .5px;
+	text-align: center;
+
+}
+
+/*<<<<<<<<<<< Footer Section ENDS>>>>>>>>>>> */
